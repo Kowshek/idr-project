@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="340" height="80">
+  <defs>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Cube top -->
+  <polygon points="40,8 68,22 40,36 12,22" fill="#FF6B00"/>
+
+  <!-- Cube left -->
+  <polygon points="12,22 40,36 40,64 12,50" fill="#CC4400"/>
+
+  <!-- Cube right -->
+  <polygon points="68,22 40,36 40,64 68,50" fill="#E85500"/>
+
+  <!-- Inner diamond -->
+  <polygon
+    points="40,18 52,36 40,54 28,36"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="2"
+    opacity="0.95"
+  />
+
+  <!-- Centre dot -->
+  <circle cx="40" cy="36" r="3.5" fill="#FFFFFF" filter="url(#glow2)"/>
+
+  <!-- IDR bold text -->
+  <text
+    x="88" y="42"
+    font-family="'Arial Black', Arial, sans-serif"
+    font-weight="900"
+    font-size="30"
+    fill="#1A1A1A"
+    letter-spacing="3"
+  >IDR</text>
+
+  <!-- Orange divider line -->
+  <rect x="88" y="47" width="192" height="2.5" fill="#FF6B00" rx="1" opacity="0.35"/>
+
+  <!-- Full name subtitle -->
+  <text
+    x="90" y="62"
+    font-family="Arial, sans-serif"
+    font-weight="500"
+    font-size="10.5"
+    fill="#666666"
+    letter-spacing="2"
+  >INSTITUTE OF DIGITAL RISK</text>
+
+</svg>
